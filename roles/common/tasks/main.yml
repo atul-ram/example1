@@ -1,0 +1,3 @@
+---
+  - name: copy file to location
+    script: scripts/file.sh  {{ input_host_id }} {{ input_group_id }} {{ location }}

@@ -1,0 +1,471 @@
+2016-07-23 13:07:53,892 p=10962 u=root |  PLAY ***************************************************************************
+2016-07-23 13:07:54,009 p=10962 u=root |  TASK [common : copy file to tmp] ***********************************************
+2016-07-23 13:07:56,255 p=10962 u=root |  changed: [10.0.0.133]
+2016-07-23 13:07:56,262 p=10962 u=root |  PLAY RECAP *********************************************************************
+2016-07-23 13:07:56,263 p=10962 u=root |  10.0.0.133                 : ok=1    changed=1    unreachable=0    failed=0   
+2016-07-23 14:12:26,877 p=11106 u=root |  Using /root/playground/simple_playbook/ansible.cfg as config file
+2016-07-23 14:12:27,059 p=11106 u=root |  1 plays in site.yml
+2016-07-23 14:12:27,082 p=11106 u=root |  PLAY ***************************************************************************
+2016-07-23 14:12:27,280 p=11106 u=root |  TASK [useradd : user] **********************************************************
+2016-07-23 14:12:27,281 p=11106 u=root |  task path: /root/playground/simple_playbook/roles/useradd/tasks/main.yml:2
+2016-07-23 14:12:29,466 p=11106 u=root |  fatal: [10.0.0.133]: FAILED! => {"changed": false, "failed": true, "invocation": {"module_args": {"append": true, "comment": "Team", "createhome": true, "expires": null, "force": false, "generate_ssh_key": null, "group": "oper", "groups": null, "home": null, "login_class": null, "move_home": false, "name": "opertor", "non_unique": false, "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER", "remove": false, "shell": "/bin/bash", "skeleton": null, "ssh_key_bits": "2048", "ssh_key_comment": "ansible-generated on centos1.box", "ssh_key_file": null, "ssh_key_passphrase": null, "ssh_key_type": "rsa", "state": "present", "system": false, "uid": null, "update_password": "always"}, "module_name": "user"}, "msg": "Group oper does not exist"}
+2016-07-23 14:12:29,473 p=11106 u=root |  NO MORE HOSTS LEFT *************************************************************
+2016-07-23 14:12:29,476 p=11106 u=root |  	to retry, use: --limit @site.retry
+
+2016-07-23 14:12:29,476 p=11106 u=root |  PLAY RECAP *********************************************************************
+2016-07-23 14:12:29,478 p=11106 u=root |  10.0.0.133                 : ok=0    changed=0    unreachable=0    failed=1   
+2016-07-23 14:30:23,319 p=11219 u=root |  Using /root/playground/simple_playbook/ansible.cfg as config file
+2016-07-23 14:30:23,656 p=11219 u=root |  1 plays in site.yml
+2016-07-23 14:30:23,682 p=11219 u=root |  PLAY ***************************************************************************
+2016-07-23 14:30:23,802 p=11219 u=root |  TASK [useradd : users | managing user accounts] ********************************
+2016-07-23 14:30:23,803 p=11219 u=root |  task path: /root/playground/simple_playbook/roles/useradd/tasks/main.yml:2
+2016-07-23 14:30:24,183 p=11219 u=root |  fatal: [10.0.0.133]: FAILED! => {"failed": true, "msg": "'dict object' has no attribute 'state'"}
+2016-07-23 14:30:24,189 p=11219 u=root |  NO MORE HOSTS LEFT *************************************************************
+2016-07-23 14:30:24,193 p=11219 u=root |  	to retry, use: --limit @site.retry
+
+2016-07-23 14:30:24,194 p=11219 u=root |  PLAY RECAP *********************************************************************
+2016-07-23 14:30:24,195 p=11219 u=root |  10.0.0.133                 : ok=0    changed=0    unreachable=0    failed=1   
+2016-07-23 14:34:26,265 p=11233 u=root |  Using /root/playground/simple_playbook/ansible.cfg as config file
+2016-07-23 14:34:26,574 p=11233 u=root |  1 plays in site.yml
+2016-07-23 14:34:26,612 p=11233 u=root |  PLAY ***************************************************************************
+2016-07-23 14:34:26,747 p=11233 u=root |  TASK [useradd : users | managing user accounts] ********************************
+2016-07-23 14:34:26,747 p=11233 u=root |  task path: /root/playground/simple_playbook/roles/useradd/tasks/main.yml:2
+2016-07-23 14:34:26,942 p=11233 u=root |  fatal: [10.0.0.133]: FAILED! => {"failed": true, "msg": "'dict object' has no attribute 'state'"}
+2016-07-23 14:34:26,946 p=11233 u=root |  NO MORE HOSTS LEFT *************************************************************
+2016-07-23 14:34:26,948 p=11233 u=root |  	to retry, use: --limit @site.retry
+
+2016-07-23 14:34:26,949 p=11233 u=root |  PLAY RECAP *********************************************************************
+2016-07-23 14:34:26,949 p=11233 u=root |  10.0.0.133                 : ok=0    changed=0    unreachable=0    failed=1   
+2016-07-23 14:37:22,793 p=11246 u=root |  Using /root/playground/simple_playbook/ansible.cfg as config file
+2016-07-23 14:37:23,057 p=11246 u=root |  1 plays in site.yml
+2016-07-23 14:37:23,081 p=11246 u=root |  PLAY ***************************************************************************
+2016-07-23 14:37:23,211 p=11246 u=root |  TASK [useradd : users | managing user accounts] ********************************
+2016-07-23 14:37:23,211 p=11246 u=root |  task path: /root/playground/simple_playbook/roles/useradd/tasks/main.yml:2
+2016-07-23 14:37:25,598 p=11246 u=root |  ok: [10.0.0.133] => (item={u'comment': u'service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'absent', u'user': u'appadmin', u'pass': u'pass123', u'system_account': False}) => {"changed": false, "invocation": {"module_args": {"append": false, "comment": "service account", "createhome": true, "expires": null, "force": false, "generate_ssh_key": false, "group": null, "groups": null, "home": null, "login_class": null, "move_home": false, "name": "appadmin", "non_unique": false, "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER", "remove": false, "shell": null, "skeleton": null, "ssh_key_bits": "2048", "ssh_key_comment": "ansible-generated on centos1.box", "ssh_key_file": null, "ssh_key_passphrase": null, "ssh_key_type": "rsa", "state": "absent", "system": false, "uid": null, "update_password": "always"}, "module_name": "user"}, "item": {"comment": "service account", "generate_keys": false, "pass": "pass123", "preseed_user": false, "state": "absent", "sudo": false, "system_account": false, "user": "appadmin"}, "name": "appadmin", "state": "absent"}
+2016-07-23 14:37:25,606 p=11246 u=root |  PLAY RECAP *********************************************************************
+2016-07-23 14:37:25,607 p=11246 u=root |  10.0.0.133                 : ok=1    changed=0    unreachable=0    failed=0   
+2016-07-23 14:38:38,604 p=11267 u=root |  PLAY ***************************************************************************
+2016-07-23 14:38:38,734 p=11267 u=root |  TASK [useradd : users | managing user accounts] ********************************
+2016-07-23 14:38:41,042 p=11267 u=root |  changed: [10.0.0.133] => (item={u'comment': u'service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'appadmin', u'pass': u'pass123', u'system_account': False})
+2016-07-23 14:38:41,053 p=11267 u=root |  PLAY RECAP *********************************************************************
+2016-07-23 14:38:41,054 p=11267 u=root |  10.0.0.133                 : ok=1    changed=1    unreachable=0    failed=0   
+2016-07-23 15:08:29,182 p=11362 u=root |  PLAY ***************************************************************************
+2016-07-23 15:08:29,353 p=11362 u=root |  TASK [useradd : users | managing user accounts] ********************************
+2016-07-23 15:08:33,333 p=11362 u=root |  changed: [10.0.0.133] => (item={u'comment': u'admin1 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin1', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:08:33,351 p=11362 u=root |  changed: [10.0.0.133] => (item={u'comment': u'admin2 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': True, u'state': u'present', u'user': u'admin2', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:08:33,360 p=11362 u=root |  TASK [useradd : users | adding users to sudoers] *******************************
+2016-07-23 15:08:35,066 p=11362 u=root |  skipping: [10.0.0.133] => (item={u'comment': u'admin1 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin1', u'pass': u'pass123', u'system_account': False}) 
+2016-07-23 15:08:35,084 p=11362 u=root |  changed: [10.0.0.133] => (item={u'comment': u'admin2 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': True, u'state': u'present', u'user': u'admin2', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:08:35,092 p=11362 u=root |  PLAY RECAP *********************************************************************
+2016-07-23 15:08:35,093 p=11362 u=root |  10.0.0.133                 : ok=2    changed=2    unreachable=0    failed=0   
+2016-07-23 15:29:46,693 p=11429 u=root |  PLAY ***************************************************************************
+2016-07-23 15:29:46,826 p=11429 u=root |  TASK [useradd : users | managing user accounts] ********************************
+2016-07-23 15:29:50,472 p=11429 u=root |  ok: [10.0.0.133] => (item={u'comment': u'admin1 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin1', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:29:50,492 p=11429 u=root |  ok: [10.0.0.133] => (item={u'comment': u'admin2 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin2', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:29:50,500 p=11429 u=root |  TASK [useradd : users | adding users to sudoers] *******************************
+2016-07-23 15:29:50,769 p=11429 u=root |  skipping: [10.0.0.133] => (item={u'comment': u'admin1 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin1', u'pass': u'pass123', u'system_account': False}) 
+2016-07-23 15:29:50,793 p=11429 u=root |  skipping: [10.0.0.133] => (item={u'comment': u'admin2 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin2', u'pass': u'pass123', u'system_account': False}) 
+2016-07-23 15:29:50,804 p=11429 u=root |  TASK [useradd : users | removing users from sudoers] ***************************
+2016-07-23 15:29:53,908 p=11429 u=root |  ok: [10.0.0.133] => (item={u'comment': u'admin1 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin1', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:29:53,933 p=11429 u=root |  changed: [10.0.0.133] => (item={u'comment': u'admin2 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin2', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:29:53,941 p=11429 u=root |  PLAY RECAP *********************************************************************
+2016-07-23 15:29:53,942 p=11429 u=root |  10.0.0.133                 : ok=2    changed=1    unreachable=0    failed=0   
+2016-07-23 15:31:24,906 p=11487 u=root |  PLAY ***************************************************************************
+2016-07-23 15:31:25,058 p=11487 u=root |  TASK [useradd : users | managing user accounts] ********************************
+2016-07-23 15:31:28,672 p=11487 u=root |  ok: [10.0.0.133] => (item={u'comment': u'admin1 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': True, u'state': u'present', u'user': u'admin1', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:31:28,689 p=11487 u=root |  ok: [10.0.0.133] => (item={u'comment': u'admin2 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin2', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:31:28,695 p=11487 u=root |  TASK [useradd : users | adding users to sudoers] *******************************
+2016-07-23 15:31:30,327 p=11487 u=root |  changed: [10.0.0.133] => (item={u'comment': u'admin1 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': True, u'state': u'present', u'user': u'admin1', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:31:30,344 p=11487 u=root |  skipping: [10.0.0.133] => (item={u'comment': u'admin2 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin2', u'pass': u'pass123', u'system_account': False}) 
+2016-07-23 15:31:30,351 p=11487 u=root |  TASK [useradd : users | removing users from sudoers] ***************************
+2016-07-23 15:31:32,249 p=11487 u=root |  skipping: [10.0.0.133] => (item={u'comment': u'admin1 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': True, u'state': u'present', u'user': u'admin1', u'pass': u'pass123', u'system_account': False}) 
+2016-07-23 15:31:32,267 p=11487 u=root |  ok: [10.0.0.133] => (item={u'comment': u'admin2 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin2', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:31:32,274 p=11487 u=root |  PLAY RECAP *********************************************************************
+2016-07-23 15:31:32,275 p=11487 u=root |  10.0.0.133                 : ok=3    changed=1    unreachable=0    failed=0   
+2016-07-23 15:31:57,281 p=11526 u=root |  PLAY ***************************************************************************
+2016-07-23 15:31:57,418 p=11526 u=root |  TASK [useradd : users | managing user accounts] ********************************
+2016-07-23 15:32:00,381 p=11526 u=root |  ok: [10.0.0.133] => (item={u'comment': u'admin1 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin1', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:32:00,399 p=11526 u=root |  ok: [10.0.0.133] => (item={u'comment': u'admin2 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin2', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:32:00,406 p=11526 u=root |  TASK [useradd : users | adding users to sudoers] *******************************
+2016-07-23 15:32:00,648 p=11526 u=root |  skipping: [10.0.0.133] => (item={u'comment': u'admin1 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin1', u'pass': u'pass123', u'system_account': False}) 
+2016-07-23 15:32:00,667 p=11526 u=root |  skipping: [10.0.0.133] => (item={u'comment': u'admin2 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin2', u'pass': u'pass123', u'system_account': False}) 
+2016-07-23 15:32:00,678 p=11526 u=root |  TASK [useradd : users | removing users from sudoers] ***************************
+2016-07-23 15:32:03,650 p=11526 u=root |  changed: [10.0.0.133] => (item={u'comment': u'admin1 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin1', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:32:03,672 p=11526 u=root |  ok: [10.0.0.133] => (item={u'comment': u'admin2 service account', u'generate_keys': False, u'preseed_user': False, u'sudo': False, u'state': u'present', u'user': u'admin2', u'pass': u'pass123', u'system_account': False})
+2016-07-23 15:32:03,680 p=11526 u=root |  PLAY RECAP *********************************************************************
+2016-07-23 15:32:03,681 p=11526 u=root |  10.0.0.133                 : ok=2    changed=1    unreachable=0    failed=0   
+2016-07-31 07:24:28,399 p=2054 u=root |  PLAY ***************************************************************************
+2016-07-31 07:24:29,044 p=2054 u=root |  TASK [common : copy file to tmp] ***********************************************
+2016-07-31 07:24:32,431 p=2054 u=root |  fatal: [10.0.0.133]: UNREACHABLE! => {"changed": false, "msg": "SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue", "unreachable": true}
+2016-07-31 07:24:32,435 p=2054 u=root |  	to retry, use: --limit @site.retry
+
+2016-07-31 07:24:32,436 p=2054 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 07:24:32,437 p=2054 u=root |  10.0.0.133                 : ok=0    changed=0    unreachable=1    failed=0   
+2016-07-31 07:26:43,721 p=2084 u=root |  PLAY ***************************************************************************
+2016-07-31 07:26:43,842 p=2084 u=root |  TASK [common : copy file to tmp] ***********************************************
+2016-07-31 07:26:47,043 p=2084 u=root |  fatal: [10.0.0.133]: UNREACHABLE! => {"changed": false, "msg": "SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue", "unreachable": true}
+2016-07-31 07:26:47,050 p=2084 u=root |  	to retry, use: --limit @site.retry
+
+2016-07-31 07:26:47,052 p=2084 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 07:26:47,053 p=2084 u=root |  10.0.0.133                 : ok=0    changed=0    unreachable=1    failed=0   
+2016-07-31 07:27:54,698 p=2100 u=root |  PLAY ***************************************************************************
+2016-07-31 07:27:54,804 p=2100 u=root |  TASK [common : copy file to tmp] ***********************************************
+2016-07-31 07:27:58,841 p=2100 u=root |  changed: [10.0.0.144]
+2016-07-31 07:27:58,881 p=2100 u=root |  TASK [common : copy] ***********************************************************
+2016-07-31 07:27:59,801 p=2100 u=root |  changed: [10.0.0.144 -> localhost]
+2016-07-31 07:27:59,809 p=2100 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 07:27:59,809 p=2100 u=root |  10.0.0.144                 : ok=2    changed=2    unreachable=0    failed=0   
+2016-07-31 07:29:34,676 p=2140 u=root |  PLAY ***************************************************************************
+2016-07-31 07:29:34,793 p=2140 u=root |  TASK [common : copy file to tmp] ***********************************************
+2016-07-31 07:29:37,746 p=2140 u=root |  ok: [10.0.0.144]
+2016-07-31 07:29:37,764 p=2140 u=root |  TASK [common : write  file to tmp] *********************************************
+2016-07-31 07:29:38,371 p=2140 u=root |  ok: [10.0.0.144 -> localhost]
+2016-07-31 07:29:38,380 p=2140 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 07:29:38,381 p=2140 u=root |  10.0.0.144                 : ok=2    changed=0    unreachable=0    failed=0   
+2016-07-31 07:39:17,862 p=8472 u=root |  PLAY ***************************************************************************
+2016-07-31 07:39:17,996 p=8472 u=root |  TASK [common : copy file to tmp] ***********************************************
+2016-07-31 07:39:20,966 p=8472 u=root |  ok: [10.0.0.144]
+2016-07-31 07:39:20,980 p=8472 u=root |  TASK [common : write  file to tmp] *********************************************
+2016-07-31 07:39:21,488 p=8472 u=root |  fatal: [10.0.0.144 -> localhost]: FAILED! => {"changed": false, "checksum": "12c6fc06c99a462375eeb3f43dfd832b08ca9e17", "failed": true, "msg": "Destination directory  does not exist"}
+2016-07-31 07:39:21,493 p=8472 u=root |  NO MORE HOSTS LEFT *************************************************************
+2016-07-31 07:39:21,496 p=8472 u=root |  	to retry, use: --limit @site.retry
+
+2016-07-31 07:39:21,496 p=8472 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 07:39:21,497 p=8472 u=root |  10.0.0.144                 : ok=1    changed=0    unreachable=0    failed=1   
+2016-07-31 07:43:02,827 p=8528 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/root/playground/simple_playbook/roles/common/tasks/main.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: copy file to tmp
+  ^ here
+
+2016-07-31 07:43:33,703 p=8534 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/root/playground/simple_playbook/roles/common/tasks/main.yml': line 5, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+#  become_user: root
+- name: write  file to tmp
+  ^ here
+
+2016-07-31 07:43:47,282 p=8540 u=root |  PLAY ***************************************************************************
+2016-07-31 07:43:47,399 p=8540 u=root |  TASK [common : write  file to tmp] *********************************************
+2016-07-31 07:43:49,646 p=8540 u=root |  changed: [10.0.0.144]
+2016-07-31 07:43:49,653 p=8540 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 07:43:49,654 p=8540 u=root |  10.0.0.144                 : ok=1    changed=1    unreachable=0    failed=0   
+2016-07-31 07:56:27,698 p=8580 u=root |  ERROR! conflicting action statements (command, file)
+
+The error appears to have been in '/root/playground/simple_playbook/roles/common/tasks/main.yml': line 5, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+#  become_user: root
+- name: write  file to tmp
+  ^ here
+
+2016-07-31 07:57:13,207 p=8586 u=root |  PLAY ***************************************************************************
+2016-07-31 07:57:13,397 p=8586 u=root |  TASK [common : file] ***********************************************************
+2016-07-31 07:57:15,420 p=8586 u=root |  changed: [10.0.0.144]
+2016-07-31 07:57:15,427 p=8586 u=root |  TASK [common : command] ********************************************************
+2016-07-31 07:57:17,451 p=8586 u=root |  changed: [10.0.0.144]
+2016-07-31 07:57:17,464 p=8586 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 07:57:17,466 p=8586 u=root |  10.0.0.144                 : ok=2    changed=2    unreachable=0    failed=0   
+2016-07-31 08:06:02,874 p=8633 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/root/playground/simple_playbook/roles/common/tasks/main.yml': line 9, column 2, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+ - command: echo "{{ input_host_id }}" >>/tmp/input_host_id
+ -debug: var=input_host_id
+ ^ here
+
+2016-07-31 08:06:17,203 p=8640 u=root |  PLAY ***************************************************************************
+2016-07-31 08:06:17,341 p=8640 u=root |  TASK [common : file] ***********************************************************
+2016-07-31 08:06:19,310 p=8640 u=root |  changed: [10.0.0.144]
+2016-07-31 08:06:19,318 p=8640 u=root |  TASK [common : command] ********************************************************
+2016-07-31 08:06:20,750 p=8640 u=root |  changed: [10.0.0.144]
+2016-07-31 08:06:20,796 p=8640 u=root |  TASK [common : debug] **********************************************************
+2016-07-31 08:06:20,942 p=8640 u=root |  ok: [10.0.0.144] => {
+    "input_host_id": 22
+}
+2016-07-31 08:06:20,951 p=8640 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:06:20,953 p=8640 u=root |  10.0.0.144                 : ok=3    changed=2    unreachable=0    failed=0   
+2016-07-31 08:07:39,886 p=8686 u=root |  PLAY ***************************************************************************
+2016-07-31 08:07:39,993 p=8686 u=root |  TASK [common : file] ***********************************************************
+2016-07-31 08:07:42,051 p=8686 u=root |  changed: [10.0.0.144]
+2016-07-31 08:07:42,057 p=8686 u=root |  TASK [common : command] ********************************************************
+2016-07-31 08:07:43,554 p=8686 u=root |  changed: [10.0.0.144]
+2016-07-31 08:07:43,562 p=8686 u=root |  TASK [common : debug] **********************************************************
+2016-07-31 08:07:43,802 p=8686 u=root |  ok: [10.0.0.144] => {
+    "result": {
+        "changed": true, 
+        "cmd": [
+            "echo", 
+            "22", 
+            ">>/tmp/input_host_id"
+        ], 
+        "delta": "0:00:00.014427", 
+        "end": "2016-07-31 08:07:52.282213", 
+        "rc": 0, 
+        "start": "2016-07-31 08:07:52.267786", 
+        "stderr": "", 
+        "stdout": "22 >>/tmp/input_host_id", 
+        "stdout_lines": [
+            "22 >>/tmp/input_host_id"
+        ], 
+        "warnings": []
+    }
+}
+2016-07-31 08:07:43,810 p=8686 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:07:43,811 p=8686 u=root |  10.0.0.144                 : ok=3    changed=2    unreachable=0    failed=0   
+2016-07-31 08:09:08,491 p=8715 u=root |  PLAY ***************************************************************************
+2016-07-31 08:09:08,593 p=8715 u=root |  TASK [common : file] ***********************************************************
+2016-07-31 08:09:10,476 p=8715 u=root |  changed: [10.0.0.144]
+2016-07-31 08:09:10,482 p=8715 u=root |  TASK [common : command] ********************************************************
+2016-07-31 08:09:12,003 p=8715 u=root |  changed: [10.0.0.144]
+2016-07-31 08:09:12,016 p=8715 u=root |  TASK [common : debug] **********************************************************
+2016-07-31 08:09:12,285 p=8715 u=root |  ok: [10.0.0.144] => {
+    "result": {
+        "changed": true, 
+        "cmd": [
+            "echo", 
+            "22", 
+            ">>/tmp/input_host_id"
+        ], 
+        "delta": "0:00:00.011340", 
+        "end": "2016-07-31 08:09:20.721565", 
+        "rc": 0, 
+        "start": "2016-07-31 08:09:20.710225", 
+        "stderr": "", 
+        "stdout": "22 >>/tmp/input_host_id", 
+        "stdout_lines": [
+            "22 >>/tmp/input_host_id"
+        ], 
+        "warnings": []
+    }
+}
+2016-07-31 08:09:12,297 p=8715 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:09:12,298 p=8715 u=root |  10.0.0.144                 : ok=3    changed=2    unreachable=0    failed=0   
+2016-07-31 08:17:09,122 p=8750 u=root |  PLAY ***************************************************************************
+2016-07-31 08:17:09,265 p=8750 u=root |  TASK [common : script] *********************************************************
+2016-07-31 08:17:10,315 p=8750 u=root |  fatal: [10.0.0.144]: FAILED! => {"failed": true, "msg": "file or module does not exist: /root/playground/simple_playbook/file.sh"}
+2016-07-31 08:17:10,319 p=8750 u=root |  NO MORE HOSTS LEFT *************************************************************
+2016-07-31 08:17:10,322 p=8750 u=root |  	to retry, use: --limit @site.retry
+
+2016-07-31 08:17:10,323 p=8750 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:17:10,324 p=8750 u=root |  10.0.0.144                 : ok=0    changed=0    unreachable=0    failed=1   
+2016-07-31 08:18:15,918 p=8771 u=root |  PLAY ***************************************************************************
+2016-07-31 08:18:16,019 p=8771 u=root |  TASK [common : script] *********************************************************
+2016-07-31 08:18:18,161 p=8771 u=root |  changed: [10.0.0.144]
+2016-07-31 08:18:18,168 p=8771 u=root |  TASK [common : debug] **********************************************************
+2016-07-31 08:18:18,407 p=8771 u=root |  ok: [10.0.0.144] => {
+    "result": {
+        "changed": true, 
+        "rc": 0, 
+        "stderr": "", 
+        "stdout": "", 
+        "stdout_lines": []
+    }
+}
+2016-07-31 08:18:18,419 p=8771 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:18:18,422 p=8771 u=root |  10.0.0.144                 : ok=2    changed=1    unreachable=0    failed=0   
+2016-07-31 08:21:16,145 p=8798 u=root |  PLAY ***************************************************************************
+2016-07-31 08:21:16,397 p=8798 u=root |  TASK [common : script] *********************************************************
+2016-07-31 08:21:18,939 p=8798 u=root |  changed: [10.0.0.144]
+2016-07-31 08:21:18,946 p=8798 u=root |  TASK [common : debug] **********************************************************
+2016-07-31 08:21:19,155 p=8798 u=root |  ok: [10.0.0.144] => {
+    "result": {
+        "changed": true, 
+        "rc": 0, 
+        "stderr": "", 
+        "stdout": "", 
+        "stdout_lines": []
+    }
+}
+2016-07-31 08:21:19,164 p=8798 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:21:19,165 p=8798 u=root |  10.0.0.144                 : ok=2    changed=1    unreachable=0    failed=0   
+2016-07-31 08:22:00,159 p=8840 u=root |  PLAY ***************************************************************************
+2016-07-31 08:22:00,264 p=8840 u=root |  TASK [common : script] *********************************************************
+2016-07-31 08:22:01,867 p=8840 u=root |  changed: [10.0.0.144]
+2016-07-31 08:22:01,874 p=8840 u=root |  TASK [common : debug] **********************************************************
+2016-07-31 08:22:02,115 p=8840 u=root |  ok: [10.0.0.144] => {
+    "result": {
+        "changed": true, 
+        "rc": 0, 
+        "stderr": "", 
+        "stdout": "", 
+        "stdout_lines": []
+    }
+}
+2016-07-31 08:22:02,123 p=8840 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:22:02,123 p=8840 u=root |  10.0.0.144                 : ok=2    changed=1    unreachable=0    failed=0   
+2016-07-31 08:22:35,242 p=8861 u=root |  PLAY ***************************************************************************
+2016-07-31 08:22:35,345 p=8861 u=root |  TASK [common : script] *********************************************************
+2016-07-31 08:22:36,865 p=8861 u=root |  changed: [10.0.0.144]
+2016-07-31 08:22:36,873 p=8861 u=root |  TASK [common : debug] **********************************************************
+2016-07-31 08:22:37,096 p=8861 u=root |  ok: [10.0.0.144] => {
+    "result": {
+        "changed": true, 
+        "rc": 0, 
+        "stderr": "", 
+        "stdout": "", 
+        "stdout_lines": []
+    }
+}
+2016-07-31 08:22:37,103 p=8861 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:22:37,104 p=8861 u=root |  10.0.0.144                 : ok=2    changed=1    unreachable=0    failed=0   
+2016-07-31 08:22:54,577 p=8882 u=root |  PLAY ***************************************************************************
+2016-07-31 08:22:54,739 p=8882 u=root |  TASK [common : script] *********************************************************
+2016-07-31 08:22:56,334 p=8882 u=root |  changed: [10.0.0.144]
+2016-07-31 08:22:56,342 p=8882 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:22:56,343 p=8882 u=root |  10.0.0.144                 : ok=1    changed=1    unreachable=0    failed=0   
+2016-07-31 08:24:14,282 p=8900 u=root |  PLAY ***************************************************************************
+2016-07-31 08:24:14,381 p=8900 u=root |  TASK [common : script] *********************************************************
+2016-07-31 08:24:16,557 p=8900 u=root |  changed: [10.0.0.144]
+2016-07-31 08:24:16,568 p=8900 u=root |  TASK [common : debug] **********************************************************
+2016-07-31 08:24:16,815 p=8900 u=root |  ok: [10.0.0.144] => {
+    "result": {
+        "changed": true, 
+        "rc": 0, 
+        "stderr": "", 
+        "stdout": "", 
+        "stdout_lines": []
+    }
+}
+2016-07-31 08:24:16,828 p=8900 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:24:16,832 p=8900 u=root |  10.0.0.144                 : ok=2    changed=1    unreachable=0    failed=0   
+2016-07-31 08:25:27,767 p=8925 u=root |  PLAY ***************************************************************************
+2016-07-31 08:25:27,879 p=8925 u=root |  TASK [common : copy file to tmp] ***********************************************
+2016-07-31 08:25:30,081 p=8925 u=root |  changed: [10.0.0.144]
+2016-07-31 08:25:30,096 p=8925 u=root |  TASK [common : debug] **********************************************************
+2016-07-31 08:25:30,352 p=8925 u=root |  ok: [10.0.0.144] => {
+    "result": {
+        "changed": true, 
+        "rc": 0, 
+        "stderr": "", 
+        "stdout": "", 
+        "stdout_lines": []
+    }
+}
+2016-07-31 08:25:30,366 p=8925 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:25:30,367 p=8925 u=root |  10.0.0.144                 : ok=2    changed=1    unreachable=0    failed=0   
+2016-07-31 08:25:47,380 p=8949 u=root |  ERROR! conflicting action statements (debug, script)
+
+The error appears to have been in '/root/playground/simple_playbook/roles/common/tasks/main.yml': line 11, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+# - debug: var=result
+  - name: copy file to tmp
+    ^ here
+
+2016-07-31 08:26:06,780 p=8955 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/root/playground/simple_playbook/roles/common/tasks/main.yml': line 14, column 12, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    register: result
+      debug: var=result
+           ^ here
+
+2016-07-31 08:26:21,757 p=8961 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/root/playground/simple_playbook/roles/common/tasks/main.yml': line 14, column 11, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    register: result
+     debug: var=result
+          ^ here
+
+2016-07-31 08:28:52,671 p=8972 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/root/playground/simple_playbook/roles/common/vars/main.yml': line 3, column 14, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+location:/tmp
+input_host_id: 22
+             ^ here
+
+2016-07-31 08:29:33,028 p=8978 u=root |  PLAY ***************************************************************************
+2016-07-31 08:29:33,126 p=8978 u=root |  TASK [common : copy file to location] ******************************************
+2016-07-31 08:29:35,248 p=8978 u=root |  changed: [10.0.0.144]
+2016-07-31 08:29:35,255 p=8978 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:29:35,256 p=8978 u=root |  10.0.0.144                 : ok=1    changed=1    unreachable=0    failed=0   
+2016-07-31 08:29:57,572 p=8998 u=root |  PLAY ***************************************************************************
+2016-07-31 08:29:57,681 p=8998 u=root |  TASK [common : copy file to location] ******************************************
+2016-07-31 08:29:59,249 p=8998 u=root |  changed: [10.0.0.144]
+2016-07-31 08:29:59,258 p=8998 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:29:59,260 p=8998 u=root |  10.0.0.144                 : ok=1    changed=1    unreachable=0    failed=0   
+2016-07-31 08:30:42,416 p=9016 u=root |  PLAY ***************************************************************************
+2016-07-31 08:30:42,514 p=9016 u=root |  TASK [common : copy file to location] ******************************************
+2016-07-31 08:30:44,070 p=9016 u=root |  changed: [10.0.0.144]
+2016-07-31 08:30:44,077 p=9016 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:30:44,078 p=9016 u=root |  10.0.0.144                 : ok=1    changed=1    unreachable=0    failed=0   
+2016-07-31 08:32:59,225 p=9036 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/root/playground/simple_playbook/roles/common/vars/main.yml': line 3, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- include: value.yml
+location: /root
+^ here
+
+2016-07-31 08:33:57,197 p=9042 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/root/playground/simple_playbook/roles/common/vars/main.yml': line 3, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- include_vars: value.yml
+location: /root
+^ here
+
+2016-07-31 08:34:17,117 p=9048 u=root |  ERROR! The vars/main.yml file for role 'common' must contain a dictionary of variables
+2016-07-31 08:35:11,776 p=9072 u=root |  PLAY ***************************************************************************
+2016-07-31 08:35:11,879 p=9072 u=root |  TASK [common : copy file to location] ******************************************
+2016-07-31 08:35:12,060 p=9072 u=root |  fatal: [10.0.0.144]: FAILED! => {"failed": true, "msg": "'input_host_id' is undefined"}
+2016-07-31 08:35:12,066 p=9072 u=root |  NO MORE HOSTS LEFT *************************************************************
+2016-07-31 08:35:12,069 p=9072 u=root |  	to retry, use: --limit @site.retry
+
+2016-07-31 08:35:12,069 p=9072 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:35:12,070 p=9072 u=root |  10.0.0.144                 : ok=0    changed=0    unreachable=0    failed=1   
+2016-07-31 08:39:02,198 p=9090 u=root |  PLAY ***************************************************************************
+2016-07-31 08:39:02,306 p=9090 u=root |  TASK [common : copy file to location] ******************************************
+2016-07-31 08:39:04,692 p=9090 u=root |  changed: [10.0.0.144]
+2016-07-31 08:39:04,703 p=9090 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:39:04,706 p=9090 u=root |  10.0.0.144                 : ok=1    changed=1    unreachable=0    failed=0   
+2016-07-31 08:41:02,142 p=9120 u=root |  PLAY ***************************************************************************
+2016-07-31 08:41:02,262 p=9120 u=root |  TASK [common : copy file to location] ******************************************
+2016-07-31 08:41:04,346 p=9120 u=root |  changed: [10.0.0.144]
+2016-07-31 08:41:04,354 p=9120 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:41:04,356 p=9120 u=root |  10.0.0.144                 : ok=1    changed=1    unreachable=0    failed=0   
+2016-07-31 08:42:12,069 p=9144 u=root |  PLAY ***************************************************************************
+2016-07-31 08:42:12,173 p=9144 u=root |  TASK [common : copy file to location] ******************************************
+2016-07-31 08:42:14,332 p=9144 u=root |  changed: [10.0.0.144]
+2016-07-31 08:42:14,339 p=9144 u=root |  PLAY RECAP *********************************************************************
+2016-07-31 08:42:14,341 p=9144 u=root |  10.0.0.144                 : ok=1    changed=1    unreachable=0    failed=0   
